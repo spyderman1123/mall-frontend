@@ -1,4 +1,4 @@
-const API_BASE_URL = '/api'
+const API_BASE_URL = 'https://mall-api-production-a754.up.railway.app/api'
 
 const getToken = () => localStorage.getItem('token')
 
