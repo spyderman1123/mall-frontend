@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #333;
+    line-height: 1.5;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ul, ol {
+    list-style: none;
+  }
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  input, button {
+    border: none;
+    outline: none;
+    font-family: inherit;
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-full max-w-[1240px] mx-auto px-4;
+  }
+  .w {
+    width: 1240px;
+    margin: 0 auto;
+  }
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-2 rounded transition-all duration-300 hover:bg-opacity-90;
+  }
+  .btn-danger {
+    @apply bg-danger text-white px-6 py-2 rounded transition-all duration-300 hover:bg-opacity-90;
+  }
+}
