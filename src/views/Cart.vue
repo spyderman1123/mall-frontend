@@ -74,7 +74,7 @@
                 <small class="text-lg">¥</small>{{ cartStore.totalPrice.toFixed(2) }}
               </p>
             </div>
-            <button class="btn-danger px-12 py-3 text-lg">去结算</button>
+            <router-link to="/checkout" class="btn-danger px-12 py-3 text-lg">去结算</router-link>
           </div>
         </div>
       </div>
