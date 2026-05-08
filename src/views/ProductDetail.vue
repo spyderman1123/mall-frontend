@@ -108,4 +108,24 @@ const handleBuyNow = () => {
 .price small {
   font-size: 18px;
 }
+
+@media (max-width: 768px) {
+  .w {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .w-96 {
+    width: 100%;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .grid img {
+    height: 150px;
+  }
+}
 </style>

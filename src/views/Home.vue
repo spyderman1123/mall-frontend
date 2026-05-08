@@ -336,6 +336,21 @@ const brandProducts = computed(() => productStore.products.slice(8, 12))
     width: 100%;
     padding: 0 10px;
   }
+  .box-hd {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 10px;
+  }
+  .box-hd h2 {
+    font-size: 22px;
+  }
+  .box-hd h2 small {
+    display: block;
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 5px;
+  }
   .box-bd ul {
     flex-direction: column;
     align-items: center;
@@ -343,7 +358,12 @@ const brandProducts = computed(() => productStore.products.slice(8, 12))
   .box-bd ul li {
     width: 100%;
     max-width: 304px;
+    height: auto;
     margin-bottom: 10px;
+  }
+  .box-bd ul li img {
+    width: 100%;
+    height: 200px;
   }
   .brand-list {
     flex-direction: column;
@@ -352,6 +372,7 @@ const brandProducts = computed(() => productStore.products.slice(8, 12))
   .brand-item {
     width: 100%;
     max-width: 304px;
+    height: 200px;
     margin-bottom: 10px;
   }
 }

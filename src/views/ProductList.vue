@@ -132,9 +132,22 @@ const filteredProducts = computed(() => {
   }
   aside {
     width: 100%;
+    margin-bottom: 20px;
   }
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .grid img {
+    height: 150px;
+  }
+  .price {
+    padding: 0 10px 10px;
+    font-size: 18px;
+  }
+  .title {
+    font-size: 14px;
+    padding: 0 10px;
   }
 }
 </style>

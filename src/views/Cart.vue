@@ -113,4 +113,26 @@ const handleRemove = (id) => {
 .price small {
   font-size: 18px;
 }
+
+@media (max-width: 768px) {
+  .w {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .divide-y > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .divide-y img {
+    width: 80px;
+    height: 80px;
+  }
+  .p-6 {
+    padding: 10px;
+  }
+  .p-16 {
+    padding: 30px 10px;
+  }
+}
 </style>

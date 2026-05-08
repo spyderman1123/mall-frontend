@@ -54,7 +54,7 @@
       </div>
       <router-link to="/cart" class="car">
         <i class="iconfont icon-cart-full"></i>
-        <span class="badge">9</span>
+        <span v-if="cartStore.totalCount > 0" class="badge">{{ cartStore.totalCount }}</span>
       </router-link>
     </div>
   </header>
@@ -63,8 +63,10 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
+import { useCartStore } from '@/stores/cart'
 
 const router = useRouter()
+const cartStore = useCartStore()
 const searchQuery = ref('')
 
 const user = computed(() => {
@@ -214,20 +216,34 @@ const handleSearch = () => {
     display: none;
   }
   .header {
-    height: auto;
-    padding: 10px 0;
+    display: flex;
     flex-direction: column;
+    height: auto;
+    padding: 10px;
     gap: 10px;
   }
-  .nav {
-    justify-content: center;
-    gap: 15px;
-  }
-  .nav li a {
-    font-size: 14px;
-  }
-  .search input {
+  .logo {
     width: 150px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  .logo a {
+    background-size: contain;
+    background-position: center;
+  }
+  .nav {
+    display: none;
+  }
+  .search {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    order: 3;
+  }
+  .car {
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 }
 </style>

@@ -188,4 +188,54 @@
   font-style: normal;
   color: #00BE9A;
 }
+
+@media (max-width: 768px) {
+  .w {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .slogan {
+    height: auto;
+    padding: 20px 0;
+  }
+  .slogan ul {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+  .service {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .service-left {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .service-left dl {
+    width: 45%;
+  }
+  .service-left dl dt {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .service-left dd a {
+    font-size: 12px;
+  }
+  .service-right ul {
+    gap: 20px;
+  }
+  .service-right ul li img {
+    width: 80px;
+    height: 80px;
+  }
+  .copyright {
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+  .copyright a {
+    display: block;
+    margin: 5px 0;
+  }
+}
 </style>
